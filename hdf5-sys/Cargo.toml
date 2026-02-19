@@ -23,7 +23,7 @@ parking_lot = "0.12.3"
 
 # Please see README for further explanation of these feature flags
 [features]
-default = []
+default = ["pkg-config"]
 mpio = ["dep:mpi-sys"]
 hl = ["hdf5-src?/hl"]
 threadsafe = ["hdf5-src?/threadsafe"]
