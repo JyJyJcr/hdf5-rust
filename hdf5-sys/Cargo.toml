@@ -30,12 +30,11 @@ threadsafe = ["hdf5-src?/threadsafe"]
 zlib = ["dep:libz-sys", "hdf5-src?/zlib"]
 static = ["dep:hdf5-src"]
 deprecated = ["hdf5-src?/deprecated"]
+pkg-config = []
 
 [build-dependencies]
 libloading = "0.8"
 regex = { workspace = true }
-
-[target.'cfg(any(all(unix, not(target_os = "macos")), windows))'.build-dependencies]
 pkg-config = "0.3"
 
 [target.'cfg(windows)'.build-dependencies]
